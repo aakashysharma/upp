@@ -16,6 +16,10 @@ public class TrackMetaInfo implements Searchable{
 	private String trackName;
 	private TrackArtist trackArtist;
 	private Time playBackTime;
+	private int yearOfRelease;
+	private String genre; 
+	
+	
 	
 	
 
