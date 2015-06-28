@@ -17,7 +17,7 @@ public class TrackMetaInfo implements Searchable{
 	private TrackArtist trackArtist;
 	private Time playBackTime;
 	private int yearOfRelease;
-	private String genre; 
+	private Genre genre; 
 	
 	
 	
@@ -96,14 +96,14 @@ public class TrackMetaInfo implements Searchable{
 	/**
 	 * @return the genre
 	 */
-	public String getGenre() {
+	public Genre getGenre() {
 		return genre;
 	}
 
 	/**
 	 * @param genre the genre to set
 	 */
-	public void setGenre(String genre) {
+	public void setGenre(Genre genre) {
 		this.genre = genre;
 	}
 
