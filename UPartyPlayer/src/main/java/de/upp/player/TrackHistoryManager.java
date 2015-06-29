@@ -18,7 +18,7 @@ public class TrackHistoryManager {
 		tracksPlayedSoFar = new ArrayList<TrackMetaInfo>();
 		// Initializing HashMap
 		for (Genre genre : Genre.values()) {
-			genreScore.put(genre, 0.0d);
+			genreScore.put(genre, 100.0d);
 		}
 	}
 
@@ -38,7 +38,7 @@ public class TrackHistoryManager {
 		Genre trackGenre = track.getGenre();
 		Double oldScore= this.genreScore.get(trackGenre);
 		//TODO derive a new way to maintain score.
-		Double newSccore = oldScore * trackScore / 100;
+		Double newSccore = 100.0 - (oldScore * trackScore / 100);
 		
 		this.genreScore.put(trackGenre, newSccore);
 		
