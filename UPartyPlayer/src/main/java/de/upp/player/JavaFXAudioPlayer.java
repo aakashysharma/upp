@@ -26,6 +26,7 @@ import java.util.*;
 
 /** Example of playing all audio files in a given directory. */
 public class JavaFXAudioPlayer extends Application {
+	private TrackHistoryManager historyManager = new TrackHistoryManager().getInstance();
   private static final String MUSIC_DIR = "/home/aakash/Music";
   public static final String TAG_COLUMN_NAME = "Tag";
   public static final String VALUE_COLUMN_NAME = "Value";
